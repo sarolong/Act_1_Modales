@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Royal Films</title>
+</head>
+<body>
+<!--nav-->
+<nav class="navbar navbar-expand-lg" style="background: linear-gradient(90deg,#020024 0,#0471a6 100%,#064983 100%,#00d4ff 100%);">
+  <div class="container-fluid">
+    <div style="margin-left: 100px; height: 60px; width: 200px;">
+    <img style="margin: 0%; height: auto; width: 120px;"  src="img/logo.svg" alt="" ">
+    </div>
+    
+    
+    
+    <div  class="collapse navbar-collapse" id="navbarScroll">
+
+      <ul  class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li  class="nav-item">
+          <a style="color: white;" class="nav-link active" aria-current="page" href="#">CARTELERA</a>
+        </li>
+
+        <li class="nav-item">
+          <a style="color: white;" class="nav-link" href="#">PROXIMAMENTE</a>
+        </li>
+
+        <li style="color: white;" class="nav-item dropdown">
+          <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MULTICINES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">MALAMBO</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">SOLEDAD</a></li>
+            <li><hr class="dropdown-divider"></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<!--Carrusel-->
+<div   id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div style="height: 360px;" class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height: 360px;" src="https://royal-films.com/assets/covers/1654630274690-jurassic-world-dominion-banner.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height: 360px;" src="https://royal-films.com/assets/covers/1654629981152-dog.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img style="height: 360px;" src="https://royal-films.com/assets/covers/1649693935727-royal-1800x466.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--Cards-->
+<div class="container" style="width: 100%; height: 80px;">
+  <div class="pt-3"><h2>CARTELERA <b style="color: #0A2D7A;"> BARRANQUILLA</b> </h2></div>
+
+</div>
+
+<div class="container-fluid mb-5 " style="background-image: url(./img/fondo.jpg);">
+  <div class="row justify-content-center">
+    
+    <div class="pt-3 m-3 card " style="width: 18rem; box-shadow: 2px 5px 15px black;">
+      <div class="text-center">
+        <a data-bs-toggle="modal" data-bs-target="#ModalDoctor" ><img style="height: 315px; width: 250px;" class="card-img-top" src="https://royal-films.com/assets/covers/1651760125695-doctor-strange.png" alt="Card image cap"></a>
+      </div>
+      <div class="card-body">
+        <b class="card-title" style="color: #0A2D7A;">DOCTOR STRANGE</b>
+        <p class="card-text">Genero: Accion</p>
+        
+      </div>
+    </div>
+
+    <div class="pt-3 m-3 card" style="width: 18rem; box-shadow: 2px 5px 15px black;">
+      <div class="text-center">
+        <a data-bs-toggle="modal" data-bs-target="#ModalJura" ><img style="height: 315px; width: 250px;" class="card-img-top" src="https://royal-films.com/assets/covers/1652195244426-jurassic.jpg" alt="Card image cap"></a>
+      </div>
+      <div class="card-body">
+        <b class="card-title" style="color: #0A2D7A;">JURASSIC WORLD</b>
+        <p class="card-text">Genero: Aventura</p>
+        
+      </div>
+    </div>
+
+    <div class="pt-3 m-3 card" style="width: 18rem; box-shadow: 2px 5px 15px black;">
+      <div class="text-center">
+        <a data-bs-toggle="modal" data-bs-target="#ModalLigth" ><img style="height: 315px; width: 250px;" class="card-img-top" src="https://royal-films.com/assets/covers/1654178849433-ligth-year.jpg" alt="Card image cap"></a>
+      </div>
+      <div class="card-body">
+        <b class="card-title" style="color: #0A2D7A;">LIGTH YEAR</b>
+        <p class="card-text">Genero: Comedia Infantil</p>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--Modales-->
+
+<!-- Modal 1-->
+<div class="modal fade" id="ModalDoctor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <b class="modal-title" id="exampleModalLabel">DOCTOR STRANGE</b>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-auto text-left">
+              <img style="height: 160px; width: 125px;" class="card-img-top" src="https://royal-films.com/assets/covers/1651760125695-doctor-strange.png" alt="Card image cap">
+            </div>
+            <div class="col">
+              <p><b>Resumen:</b></p>
+              <p>Viaja a lo desconocido con el Doctor Strange, quien con la ayuda de tanto antiguos como nuevos aliados místicos, recorre las complejas y peligrosas realidades alternativas del multiverso para enfrentarse a un nuevo y misterioso adversario. (FILMAFFINITY) </p>
+              <p><b>Estreno:</b>  mayo 2022.</p> 
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2-->
+<div class="modal fade" id="ModalJura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <b class="modal-title" id="exampleModalLabel">JURASSIC WORLD</b>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-auto text-left">
+              <img style="height: 160px; width: 125px;" class="card-img-top" src="https://royal-films.com/assets/covers/1652195244426-jurassic.jpg" alt="Card image cap">
+            </div>
+            <div class="col">
+              <p><b>Resumen:</b></p>
+              <p>Cuatro años después de la destrucción de Isla Nublar, los dinosaurios ahora viven y cazan junto a los humanos en todo el mundo. Este frágil equilibrio remodelará el futuro y determinará, de una vez por todas, si los seres humanos seguirán siendo los depredadores máximos en un planeta que ahora comparten con las criaturas más temibles de la historia. </p>
+              <p><b>Estreno:</b>  Julio 2022.</p> 
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3-->
+<div class="modal fade" id="ModalLigth" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <b class="modal-title" id="exampleModalLabel">LIGTH YEAR</b>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-auto text-left">
+              <img style="height: 160px; width: 125px;" class="card-img-top" src="https://royal-films.com/assets/covers/1654178849433-ligth-year.jpg" alt="Card image cap">
+            </div>
+            <div class="col">
+              <p><b>Resumen:</b></p>
+              <p>La historia del origen de Buzz Lightyear, el héroe que inspiró el juguete, y que nos da a conocer al legendario Guardián Espacial que acabaría contando con generaciones de fans.</p>
+              <p><b>Estreno:</b>  Junio 2022.</p> 
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
+</body>
+</html>
